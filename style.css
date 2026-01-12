@@ -7,37 +7,98 @@ body {
 
 .intro-section {
     background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+    
+}
+
+.title-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mid {
+    margin-top: 10px;
+    display: flex;
+}
+
+.mid-text {
+    display: inline-block;
+    flex-basis: 350px;
+
+}
+
+.mid-text h1, p, button {
+    gap: 4px;
+}
+
+.mid-text button {
+    background-color: #3882F6;
+    color: white;
+    border-radius: 5px;
+}
+
+.mid-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+
+    width: 100px;
+    height: 100px;
+}
+
+
+.title-header ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+}
+
+.title-header a{
+    text-decoration: none;
+    color: white;
 }
 
 .random-info-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
 }
 
 .random-images {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    flex-shrink: 1;
+    min-width: 150px;
 } 
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-basis: 100px;
 }
 
 
 .card img {
-    border: 4px solid #3882F6;
-    border-radius: 6px;
-
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #3882F6;
+    border-radius: 5px;
 }
 
 .card p {
     text-align: center;
     display: inline-block;
-    width: 150px;
 }
 
 
@@ -55,6 +116,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 36px;
+    flex-shrink: 1;
+    min-width: 320px;
 }
 
 #author, #author-quote {
@@ -72,7 +135,6 @@ body {
 }
 
 .call-to-action-section {
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     flex-shrink: 0;
@@ -87,7 +149,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    flex-shrink: 0;
+    min-width: 400px; 
     
 }
 
