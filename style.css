@@ -6,12 +6,38 @@ body {
 }
 
 .intro-section {
-    border: 2px solid red;
     background-color: #1F2937;
 }
 
 .random-info-section {
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.random-images {
+    display: flex;
+    gap: 30px;
+} 
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card img {
+    border: 4px solid #3882F6;
+    border-radius: 6px;
+
+}
+
+.card p {
+    text-align: center;
+    display: inline-block;
+    width: 150px;
 }
 
 
@@ -25,7 +51,6 @@ body {
 .quote {
     flex: 0 0 600px;
     font-size: 27px;
-    margin: 24px;
     color: #1F2937;
     display: flex;
     flex-direction: column;
@@ -47,18 +72,22 @@ body {
 }
 
 .call-to-action-section {
+    border: 2px solid red;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 #call-to-action-container {
     background-color: #3882F6;
     margin: 60px;
-    flex-basis: 750px;
+    flex-basis: 750px; 
     border-radius: 8px; 
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 20px;
+    flex-shrink: 0;
     
 }
 
@@ -83,7 +112,6 @@ body {
 }
 
 .footer-section {
-    border: 2px solid red;
     background-color: #1F2937;
     display: flex;
     justify-content: center;
